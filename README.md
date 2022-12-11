@@ -2,7 +2,10 @@
 
 This extension features syntax highlighting, autocompletion and hover hints for IITK Traveller.  
 
-# How to install ?
+# How to Run?
+To run the source code, open the directory in VSCode and press F5, this will open a new vscode window with the extension installed on it.
+
+# How to install?
 
 Install vsrc using npm
 
