@@ -1,5 +1,6 @@
 import * as vscode from 'vscode';
-import {explanations} from "./data/explainations";
+import { hoverfunc } from './hover';
+import { completions } from './completion';
 
 export function activate(context: vscode.ExtensionContext) {
 
@@ -10,22 +11,8 @@ export function activate(context: vscode.ExtensionContext) {
 	});
 
 	context.subscriptions.push(disposable);
-
-    let hoverfunc = vscode.languages.registerHoverProvider('iitkt',{
-        provideHover(document, position, token){
-            const range = document.getWordRangeAtPosition(position);
-            const word = document.getText(range);
-            console.log("I AM HERE!");
-            console.log(word);
-
-            if(word in explanations){
-                const explanation = explanations[word];
-                return new vscode.Hover([explanation]);
-            }
-        }
-    });
-
     context.subscriptions.push(hoverfunc);
+    context.subscriptions.push(completions);
 }
 
 // This method is called when your extension is deactivated

@@ -7,6 +7,12 @@ To run the source code, open the directory in VSCode and press F5, this will ope
 
 # How to install?
 
+Install dependencies
+
+```
+npm i
+```
+
 Install vsrc using npm
 
 ```
