@@ -3,6 +3,10 @@
   "displayName": "IITK-Traveller-Support",
   "description": "Language Support for IITK Traveller",
   "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ShivamIITK21/vscode-extension-IITK-Traveller"
+   },
   "engines": {
     "vscode": "^1.74.0"
   },
