@@ -1,0 +1,27 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "IITK Traveller",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#special"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.operator.iitkt",
+				"match": "\\b(iit_gate_in_1|iit_gate_in_2|hall_2|hall_3|hall_5|hall_12|mt_1_3|mt_3_1|mt_2_3|mt_3_2|iit_gate_out_1|iit_gate_out_2|lecture_hall_gt|lecture_hall_gt_t|lecture_hall_gt_f|lecture_hall_lt|lecture_hall_lt_t|lecture_hall_lt_f|lecture_hall_eq|lecture_hall_eq_t|lecture_hall_eq_f|oat_stairs_1|oat_stairs_2|oat_stairs_c|southern_labs_1|southern_labs_2|southern_labs_c|hall_13_1|hall_13_2|hall_13_3|hall_13_c)\\b"
+			}]
+		},
+		"special": {
+			"patterns": [{
+				"name" : "keyword.other.iitkt",
+				"match": "\\b(start|finish)\\b"
+			}]
+		}
+	},
+	"scopeName": "source.iitk"
+}
