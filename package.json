@@ -21,7 +21,7 @@
     "languages": [{
       "id": "iitkt",
       "aliases": ["IITK Traveller", "iitkt"],
-      "extensions": [".iitk"],
+      "extensions": [".iitkt"],
       "configuration": "./language-configuration.json"
     }],
     "grammars": [{
